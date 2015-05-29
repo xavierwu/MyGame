@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mygame.SingleActivity">
+
+    <Button
+        android:id="@+id/btn_adventure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adventure" />
+
+    <Button
+        android:id="@+id/btn_freestyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FreeStyle" />
+
+
+</LinearLayout>
+<!-- From: file:/Users/danny/StudioProjects/MyGame/app/src/main/res/layout/activity_single.xml -->

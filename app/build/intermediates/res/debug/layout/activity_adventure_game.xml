@@ -6,6 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/game_background"
     tools:context="com.example.mygame.AdventureGameActivity" >
 
     <ImageView
@@ -13,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/pop" />
+        android:background="@drawable/fill" />
 
     <ImageView
         android:id="@+id/original"

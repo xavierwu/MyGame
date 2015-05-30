@@ -1,8 +1,9 @@
 package com.example.mygame;
 
+import android.app.ActionBar;
+import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -17,7 +18,7 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 
-public class AdventureGameActivity extends ActionBarActivity {
+public class AdventureGameActivity extends Activity {
 
     ImageView circle;
     ImageView original;
@@ -30,7 +31,7 @@ public class AdventureGameActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_adventure_game);
 
         circle = (ImageView) findViewById(R.id.circle);
         original = (ImageView) findViewById(R.id.original);

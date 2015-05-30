@@ -3,9 +3,9 @@ package com.example.mygame;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.content.res.Resources;
 import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.Drawable;
@@ -19,15 +19,20 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
-    Button btnSingle;
-    Button btnDouble;
+    ImageButton imgBtnSingle;
+    ImageButton imgBtnDouble;
+
+    ImageButton imgBtnAbout;
+    ImageButton imgBtnSettings;
+    ImageButton imgBtnRank;
 
 
     @Override
@@ -35,16 +40,20 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnSingle = (Button) findViewById(R.id.btn_single);
-        btnDouble = (Button) findViewById(R.id.btn_double);
+        imgBtnSingle = (ImageButton) findViewById(R.id.imgBtn_single);
+        imgBtnDouble = (ImageButton) findViewById(R.id.imgBtn_double);
 
-        btnSingle.setOnClickListener(btnSingleListener);
-        btnDouble.setOnClickListener(btnDoubleListener);
+        imgBtnAbout = (ImageButton) findViewById(R.id.imgBtn_about);
+        imgBtnSettings = (ImageButton) findViewById(R.id.imgBtn_settings);
+        imgBtnRank = (ImageButton) findViewById(R.id.imgBtn_rank);
+
+        imgBtnSingle.setOnClickListener(imgBtnSingleListener);
+        imgBtnDouble.setOnClickListener(imgBtnDoubleListener);
 
 
     }
 
-    protected View.OnClickListener btnSingleListener = new View.OnClickListener() {
+    protected View.OnClickListener imgBtnSingleListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(MainActivity.this, SingleActivity.class);
@@ -52,7 +61,7 @@ public class MainActivity extends ActionBarActivity {
         }
     };
 
-    View.OnClickListener btnDoubleListener = new View.OnClickListener() {
+    View.OnClickListener imgBtnDoubleListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
 

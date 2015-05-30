@@ -756,8 +756,22 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int ic_launcher=0x7f020057;
-        public static final int pop=0x7f020058;
+        public static final int about=0x7f020057;
+        public static final int back=0x7f020058;
+        public static final int fill=0x7f020059;
+        public static final int game_background=0x7f02005a;
+        public static final int ic_launcher=0x7f02005b;
+        public static final int main_background=0x7f02005c;
+        public static final int map=0x7f02005d;
+        public static final int map_background=0x7f02005e;
+        public static final int pause=0x7f02005f;
+        public static final int pop=0x7f020060;
+        public static final int rank=0x7f020061;
+        public static final int settings=0x7f020062;
+        public static final int single_player=0x7f020063;
+        public static final int snail=0x7f020064;
+        public static final int time_and_score=0x7f020065;
+        public static final int two_players=0x7f020066;
     }
     public static final class id {
         public static final int action_bar=0x7f08001a;
@@ -773,14 +787,12 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f08002f;
         public static final int action_mode_bar_stub=0x7f08002e;
         public static final int action_mode_close_button=0x7f080022;
-        public static final int action_settings=0x7f080049;
+        public static final int action_settings=0x7f080055;
         public static final int activity_chooser_view_content=0x7f080023;
         public static final int always=0x7f080011;
         public static final int beginning=0x7f08000d;
-        public static final int btn_adventure=0x7f080047;
-        public static final int btn_double=0x7f080046;
-        public static final int btn_freestyle=0x7f080048;
-        public static final int btn_single=0x7f080045;
+        public static final int btn_adventure=0x7f080053;
+        public static final int btn_freestyle=0x7f080054;
         public static final int checkbox=0x7f08002b;
         public static final int circle=0x7f080042;
         public static final int collapseActionView=0x7f080012;
@@ -792,11 +804,25 @@ containing a value of this type.
         public static final int end=0x7f08000e;
         public static final int expand_activities_button=0x7f080024;
         public static final int expanded_menu=0x7f08002a;
+        public static final int f=0x7f080046;
+        public static final int fullscreen_content=0x7f080045;
         public static final int home=0x7f080003;
         public static final int homeAsUp=0x7f080008;
         public static final int icon=0x7f080028;
         public static final int ifRoom=0x7f080013;
         public static final int image=0x7f080025;
+        public static final int imgBtn_about=0x7f08004e;
+        public static final int imgBtn_back=0x7f080050;
+        public static final int imgBtn_double=0x7f08004c;
+        public static final int imgBtn_fill=0x7f08004a;
+        public static final int imgBtn_pause=0x7f080047;
+        public static final int imgBtn_pop=0x7f080049;
+        public static final int imgBtn_rank=0x7f08004f;
+        public static final int imgBtn_settings=0x7f08004d;
+        public static final int imgBtn_single=0x7f08004b;
+        public static final int imgView_snail=0x7f080051;
+        public static final int imgView_timeAndScore=0x7f080048;
+        public static final int img_map=0x7f080052;
         public static final int left_icon=0x7f080031;
         public static final int listMode=0x7f080004;
         public static final int list_item=0x7f080027;
@@ -864,9 +890,11 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030016;
         public static final int abc_search_view=0x7f030017;
         public static final int activity_adventure_game=0x7f030018;
-        public static final int activity_main=0x7f030019;
-        public static final int activity_single=0x7f03001a;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001b;
+        public static final int activity_fullscreen_activity3=0x7f030019;
+        public static final int activity_main=0x7f03001a;
+        public static final int activity_map=0x7f03001b;
+        public static final int activity_single=0x7f03001c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
     }
     public static final class menu {
         public static final int main=0x7f0c0000;

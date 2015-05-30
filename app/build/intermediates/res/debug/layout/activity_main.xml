@@ -1,21 +1,80 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.mygame.MainActivity">
+    tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btn_single"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Single" />
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:gravity="center"
+        android:keepScreenOn="true" />
 
-    <Button
-        android:id="@+id/btn_double"
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Double" />
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imgBtn_single"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="160dp"
+                android:background="@drawable/single_player" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_double"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/two_players" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgBtn_settings"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+
+                    android:background="@drawable/settings" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_about"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/about" />
+
+                <ImageButton
+                    android:id="@+id/imgBtn_rank"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:background="@drawable/rank" />
+            </LinearLayout>
 
 
-</LinearLayout><!-- From: file:/Users/danny/StudioProjects/MyGame/app/src/main/res/layout/activity_main.xml -->
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
+<!-- From: file:/Users/danny/StudioProjects/MyGame/app/src/main/res/layout/activity_main.xml -->
